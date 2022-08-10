@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'ods-detalhe',
+    loadChildren: () => import('./ods-detalhe/ods-detalhe.module').then( m => m.OdsDetalhePageModule)
+  },
 ];
 
 @NgModule({
